@@ -1,0 +1,15 @@
+img{
+    width: auto;
+    margin: 10px;
+	padding: 10px;
+	border: 10px dashed white;
+
+}
+
+img:hover{
+    width: auto;
+    margin: 10px;
+	padding: 10px;
+	border: 10px dashed blue;
+
+}
