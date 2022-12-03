@@ -33,7 +33,7 @@ img:hover{
 }
 
 body {
-    background: url("../images/background.png") repeat-x 0px 0px fixed;
+    background: url("../images/background.png") repeat fixed;
     font-family: "Sofia", sans-serif;
     display: grid;
     grid-template-areas:
@@ -43,7 +43,6 @@ body {
     'footer';
     margin: 20px;
     color: #005D85;
-    background-color: #FFFFFF;
 }
 
 p h1 h2 {
@@ -56,6 +55,8 @@ p h1 h2 {
 
 header {
     grid-area: header;
+    color: #005D85;
+    background-color: transparent;
 }
 
 main {
@@ -69,6 +70,8 @@ aside {
 
 footer {
     grid-area: footer;
+    color: #005D85;
+    background-color: transparent;
 }
 
 .gallery img {
