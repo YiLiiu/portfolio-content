@@ -1,3 +1,20 @@
+.nav_links{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
 img{
     width: auto;
     max-width: 500px;
@@ -17,8 +34,9 @@ img:hover{
 
 body {
     background-image: url("../images/background.jpg");
-    background-size: cover;
-    background-position: center center; 
+    background-size: 100% 100%;
+    background-position: center; 
+    background-repeat: no-repeat;
     font-family: "Sofia", sans-serif;
     display: grid;
     grid-template-areas:
@@ -26,6 +44,18 @@ body {
     'aside'
     'main'
     'footer';
+    margin: 20px;
+    color: #000000;
+    background-color: #FFFFFF;
+
+}
+
+p{
+    margin: 10px;
+}
+
+.nav a:hover, #current{
+	text-decoration: underline;
 }
 
 header {
@@ -38,6 +68,7 @@ main {
 
 aside {
     grid-area: aside;
+    margin: 10px;
 }
 
 footer {
@@ -47,6 +78,21 @@ footer {
 .gallery img {
     display: flex;
     flex-direction: column;
+}
+
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+}
+  
+.skip a:focus{
+    top: 0;
 }
 
 #main_pic { animation: fade 3s; }
@@ -67,19 +113,27 @@ footer {
 }
 
 @media only screen and (min-width: 700px) {
+    img {
+        max-width: 700px;
+    }
+    .nav_links{
+        grid-template-columns: auto auto auto auto;
+    }
+
     body {
-        background-image: url("../images/background.jpg");
-        background-size: cover;
-        background-position: center center; 
-        font-family: "Sofia", sans-serif;
-        display: grid;
         grid-template-areas:
         'header header'
         'aside main'
         'footer footer';
     }
+}
 
-    .gallery img {
-        display: flex;
+
+@media only screen and (min-width: 1000px) { 
+    img {
+        max-width: 800px;
+    }
+    .nav_links{
+        font-size: 19px;
     }
 }

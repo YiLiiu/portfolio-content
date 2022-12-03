@@ -23,9 +23,10 @@
 
 <body>
 	<header>
+		<div class="skip"><a href="#main" tabindex="1">Skip to Main Content</a></div><!--tabindex = keyboard accessible-->
 		<nav>
-			<ul>
-				<li class="active"><a href="index.html">Home</a></li>
+			<ul class="nav_links">
+				<li class="active"><a href="index.html" id="current">Home</a></li>
 				<li><a href="gallery.html">Gallery</a></li>
 				<li><a href="club_career.html">Club Career</a></li>
 				<li><a href="international_career.html">International Career</a></li>
@@ -33,7 +34,7 @@
 		</nav>
 	</header>
 
-	<main>
+	<main id="main">
 		<h1>Messi</h1>
 		<i class="fa-sharp fa-solid fa-futbol"></i>
 		<h2>Messi Lifetime</h2>
@@ -42,22 +43,50 @@
 			He is an assistant to the Argentine professional football club and is currently serving as a striker, playing for Paris Saint-Germain
 			in the French Football League.
 		</p>
+		<p>
+			In the World Cup this yera, he led the team to break out of the group stage in a disadvantaged situation,
+		</p>
 		<figure>
 			<img src="images/psg_messi.png" alt="Messi in PSG" id="main_pic">
 			<figcaption>Messi in PSG</figcaption>
 		</figure>
 		<p>
 			In 2000, Messi entered the La Masia youth academy. In 2004, Messi signed a professional contract with FC Barcelona.
+		</p>
+		<p>
 			In 2009, Messi helped Barcelona crown the six crowns, and personally won the Ballon d'Or for the first time.
-			In 2011, Messi helped Barcelona to crown five crowns. In 2012, Messi set a new football scoring record in a single natural year with 91 official game goals and won the Golden Ball for the fourth consecutive year.
+		</p>
+		<p>
+			In 2011, Messi helped Barcelona to crown five crowns.
+			In 2012, Messi set a new football scoring record in a single natural year with 91 official game goals and won the Golden Ball for the fourth consecutive year.
+		</p>	
+			
+		<p>
 			In 2015, Messi once again helped Barcelona crown the five-time champion, and personally won the Golden Ball for the fifth time.
+		</p>
+		<p>
 			In 2019, Messi won the Ballon d'Or for the sixth time. In 2021, Messi freely joined Paris Saint-Germain Football Club and won the Ballon d'Or for the seventh time in the same year.
 		</p>
+		<div class="form">
+			<!-- modify this form HTML and place wherever you want your form -->
+			<form action="https://formspree.io/f/xpznokor" method="POST">
+				<label> Your email:
+					<input type="email" name="email">
+				</label>
+				<label> Your message:
+					<input name="message"></input>
+				</label>
+			<!-- your other form fields go here -->
+				<button type="submit">Send</button>
+			</form>
+		</div>
+
 	</main>
 
 	<aside>
-		<p>Chase for the World Cup!</p>
+		<p>World Cup!</p>
 	</aside>
+
 
 	<footer>
 		&copy; 2022
