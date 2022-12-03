@@ -44,12 +44,11 @@ body {
     'main'
     'footer';
     margin: 20px;
-    color: #000000;
+    color: #005D85;
     background-color: #FFFFFF;
-
 }
 
-p{
+p h1 h2 {
     margin: 10px;
 }
 
