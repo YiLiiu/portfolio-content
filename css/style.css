@@ -33,10 +33,9 @@ img:hover{
 }
 
 body {
-    background-image: url("../images/background.jpg");
-    background-size: 100% 100%;
+    background-image: url("../images/background.png");
     background-position: center; 
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     font-family: "Sofia", sans-serif;
     display: grid;
     grid-template-areas:
